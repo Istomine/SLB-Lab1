@@ -15,7 +15,7 @@ int char_occurences(char* fileName, size_t fileLen, char constVal){
 }
 
 
-int main(int argc, char** argv) {
+int main(int argc, char* argv[]) {
 
     FILE* fp;
 

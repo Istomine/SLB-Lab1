@@ -4,17 +4,15 @@
 
 #include "decrypt0.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 void decrypt0(FILE* fp){
 
     int xorValue;
-    u_int32_t fileChar;
+    int fileChar;
 
-    while ((fileChar = fgetc(fp)), fileChar != EOF ){
-
+    while ((fileChar = fgetc(fp)) != EOF ){
         fseek(fp,-1,1);
-        if((fileChar & 2) == 0){
+        if(!( (fileChar^0xef) & 2)){
             xorValue = (int)((char)fileChar ^ 0xef);
         }
         else{
