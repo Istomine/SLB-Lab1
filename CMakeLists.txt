@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 23)
 add_executable(SLB_Lab1 main.c
         decrypt0.c
         decrypt0.h
+        decrypt1.c
+        decrypt1.h
 )
