@@ -8,6 +8,6 @@ add_executable(SLB_Lab1 main.c
         decrypt0.h
         decrypt2.c
         decrypt2.h
-        encrypt2.c
-        encrypt2.h
+        decrypt1.c
+        decrypt1.h
 )

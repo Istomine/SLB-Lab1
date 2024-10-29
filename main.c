@@ -2,7 +2,7 @@
 #include <string.h>
 #include "decrypt0.h"
 #include "decrypt2.h"
-#include "encrypt2.h"
+#include "decrypt1.h"
 
 int char_occurences(char* fileName, size_t fileLen, char constVal){
     int rtn = 0;
@@ -40,10 +40,9 @@ int main(int argc, char* argv[]) {
             decrypt0(fp);
             break;
         case 1:
-            //decrypt1(fp);
+            decrypt1(fp);
             break;
         default:
-            //encrypt2(fp);
             decrypt2(fp);
     }
 
