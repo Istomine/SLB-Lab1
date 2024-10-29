@@ -33,7 +33,6 @@ void decrypt2(FILE *file) {
 
         fseek(file, -1, SEEK_CUR);
         
-        // because 5 & 0xe = 4
         indexModifier = (indexModifier + 5) & 0xe;
         currChar += keystream[indexModifier + 1];
         fputc(currChar, file);
