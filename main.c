@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "decrypt0.h"
+#include "decrypt2.h"
+#include "encrypt2.h"
 
 int char_occurences(char* fileName, size_t fileLen, char constVal){
     int rtn = 0;
@@ -41,7 +43,8 @@ int main(int argc, char* argv[]) {
             //decrypt1(fp);
             break;
         default:
-            //decrypt2(fp);
+            //encrypt2(fp);
+            decrypt2(fp);
     }
 
     fclose(fp);

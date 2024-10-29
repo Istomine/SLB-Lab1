@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.20)
 project(SLB_Lab1 C)
 
 set(CMAKE_C_STANDARD 23)
@@ -6,4 +6,8 @@ set(CMAKE_C_STANDARD 23)
 add_executable(SLB_Lab1 main.c
         decrypt0.c
         decrypt0.h
+        decrypt2.c
+        decrypt2.h
+        encrypt2.c
+        encrypt2.h
 )
